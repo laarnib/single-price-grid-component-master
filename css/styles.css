@@ -180,4 +180,12 @@ footer {
     .bottom-container {
         flex-direction: column;
     }
+
+    .bottom-container-one {
+        border-bottom-left-radius: 0;
+    }
+
+    .bottom-container-two {
+        border-bottom-left-radius: 5px;
+    }
 }
