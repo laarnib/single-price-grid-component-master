@@ -1,0 +1,182 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***** CSS Reset ends here *****/
+
+html {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+body {
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    background-color: white;
+    width: 100%;
+    max-width: 635px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 55px 5px hsl(204, 43%, 93%);
+    border-radius: 5px;
+}
+
+footer {
+    margin: 0 auto;
+}
+.top-container {
+
+    padding: 40px 40px 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.bottom-container {
+    flex: 1;
+    display: flex;
+}
+
+.top-container h2 {
+    font-size: 1.5em;
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 25px;
+}
+
+.top-container h3 {
+    font-size: 1.17em;
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 15px;
+}
+
+.top-container p {
+    color:hsl(218, 22%, 67%);
+    line-height: 1.5em;
+}
+
+.bottom-container-one {
+    flex: 1;
+    padding: 40px 40px 40px;
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 5px;
+}
+
+.bottom-container-two {
+    flex: 1;
+    padding: 40px 40px 40px;
+    background-color: hsl(179, 47%, 52%);
+    border-bottom-right-radius: 5px;
+}
+
+.bottom-container h3 {
+    color: hsl(204, 43%, 93%);
+    font-size: 1.17em;
+}
+
+.bottom-container-one h3 {
+    margin-bottom: 20px;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.price {
+    color: hsl(204, 43%, 93%);
+    font-size: 1.75em;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.price-time-length {
+    color: hsl(180, 49%, 60%);
+}
+
+.bottom-container p {
+    color: hsl(180, 55%, 87%);
+    margin-bottom: 25px;
+}
+
+.bottom-container li {
+    color: hsl(180, 55%, 87%);
+    font-size: 14px;
+    line-height: 1.3em;
+
+}
+
+.sign-up-btn {
+    width: 100%;
+    padding: 15px 0;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    border: none;
+    color: hsl(204, 43%, 93%);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.bottom-container-two h3 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+    .main-container {
+        max-width: 311px;
+    }
+
+    .bottom-container {
+        flex-direction: column;
+    }
+}
